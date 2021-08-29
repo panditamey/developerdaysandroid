@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CalculatorActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/ac"
+                style="@style/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/ac"
+                android:textStyle="normal"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/back"
+                style="@style/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_backspace" />
+
+            <ImageView
+                android:src="@drawable/ic_percent"
+                android:scaleType="center"
+                android:id="@+id/modulo"
+                style="@style/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="@string/modulo"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:src="@drawable/ic_divide"
+                android:scaleType="center"
+                android:id="@+id/division"
+                style="@style/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/divide" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_7" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_8" />
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_9" />
+
+            <ImageView
+                android:src="@drawable/ic_multiply"
+                android:scaleType="center"
+                android:id="@+id/multiplication"
+                style="@style/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/x" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_4" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_5" />
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_6" />
+
+            <ImageView
+                android:src="@drawable/ic_minus"
+                android:scaleType="center"
+                android:id="@+id/subtraction"
+                style="@style/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/minus" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_1" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_2" />
+
+            <TextView
+                android:id="@+id/three"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_3" />
+
+            <ImageView
+                android:src="@drawable/ic_plus"
+                android:scaleType="center"
+                android:id="@+id/addition"
+                style="@style/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/plus" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/change_sign"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/change_sign" />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/decimal"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/decimal" />
+
+            <ImageView
+                android:src="@drawable/ic_equals"
+                android:scaleType="center"
+                android:id="@+id/equals"
+                style="@style/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="@string/equals" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="#60FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
